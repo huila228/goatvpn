@@ -24,9 +24,9 @@ This repository contains the public transparency files for my VPN setup.
 
 servers architecture:
 iPhone
-  ↓ encrypted VLESS/Reality traffic
+  > encrypted VLESS/Reality traffic
 RU server :443
-  ↓ same encrypted bytes, just forwarded
+  > same encrypted bytes, just forwarded
 EU server :443
-  ↓ тут уже Xray проверяет UUID/Reality/etc
+  > тут уже Xray проверяет UUID/Reality/etc >
 Internet
