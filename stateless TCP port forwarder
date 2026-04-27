@@ -1,0 +1,13 @@
+[Unit]
+Description=RU TCP relay to EU Xray Reality
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/socat -d -d TCP-LISTEN:443,fork,reuseaddr TCP:REDACTED:443
+Restart=always
+RestartSec=3
+LimitNOFILE=1048576
+
+[Install]
+WantedBy=multi-user.target
