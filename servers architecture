@@ -1,0 +1,7 @@
+iPhone
+  ↓ encrypted VLESS/Reality traffic
+RU server :443
+  ↓ same encrypted bytes, just forwarded
+EU server :443
+  ↓ тут уже Xray проверяет UUID/Reality/etc
+Internet
