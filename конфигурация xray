@@ -1,0 +1,50 @@
+{
+  "enable": true,
+  "listen": "",
+  "port": 443,
+  "protocol": "vless",
+  "tag": "inbound-443",
+  "settings": {
+    "clients": "<13 clients, UUID/email/subId/tgId redacted>",
+    "decryption": "none",
+    "encryption": "none"
+  },
+  "stream_settings": {
+    "network": "tcp",
+    "security": "reality",
+    "realitySettings": {
+      "show": false,
+      "target": "esg.x5.ru:443",
+      "serverNames": ["<REDACTED>"],
+      "privateKey": "<REDACTED>",
+      "shortIds": ["<REDACTED>"],
+      "settings": {
+        "publicKey": "<REDACTED>",
+        "fingerprint": "chrome",
+        "serverName": "",
+        "spiderX": "<REDACTED>"
+      }
+    },
+    "tcpSettings": {
+      "acceptProxyProtocol": false,
+      "header": {
+        "type": "none"
+      }
+    },
+    "sockopt": {
+      "tcpFastOpen": false,
+      "tcpMptcp": false,
+      "tcpcongestion": "bbr",
+      "tcpMaxSeg": 1440,
+      "tcpKeepAliveInterval": 60,
+      "tcpKeepAliveIdle": 300,
+      "tcpUserTimeout": 10000,
+      "tcpWindowClamp": 600,
+      "domainStrategy": "AsIs"
+    }
+  },
+  "sniffing": {
+    "enabled": false,
+    "destOverride": ["http", "tls", "quic", "fakedns"]
+  }
+}
